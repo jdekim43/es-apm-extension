@@ -1,8 +1,5 @@
-# common-api-server
-API 서버 개발에 공통적으로 필요한 모델 라이브러리
-* Environment
-* ApiException
-* ApiResponse
+# es-apm-extension
+Elasticsearch APM 확장함수
 
 ## Install
 ### Gradle Project
@@ -10,5 +7,5 @@ API 서버 개발에 공통적으로 필요한 모델 라이브러리
     ```
     build.gradle.kts
    
-    implementation("kr.jadekim:common-api-server:1.0.0")
+    implementation("kr.jadekim:es-apm-extension:$esApmExtensionVersion")
     ```

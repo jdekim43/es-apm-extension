@@ -9,7 +9,7 @@ plugins {
 
 val artifactName = "es-apm-extension"
 val artifactGroup = "kr.jadekim"
-val artifactVersion = "0.0.1"
+val artifactVersion = "0.0.3"
 group = artifactGroup
 version = artifactVersion
 
@@ -24,7 +24,7 @@ dependencies {
     val ktorExtensionVersion: String by project
     val exposedExtensionVersion: String by project
 
-    implementation("co.elastic.apm:apm-agent-api:$esApmVersion")
+    api("co.elastic.apm:apm-agent-api:$esApmVersion")
 
     compileOnly("kr.jadekim:j-logger:$jLoggerVersion")
     compileOnly("kr.jadekim:ktor-extension:$ktorExtensionVersion")
